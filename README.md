@@ -1,5 +1,5 @@
 # Grocery Shopping Assistance Application
-Dev-Version: 0.1.1
+Dev-Version: 0.1.1\
 Release at Version: 1.0.0
 
 ## Dev Version Notes

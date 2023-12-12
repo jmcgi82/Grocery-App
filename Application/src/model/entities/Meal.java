@@ -2,7 +2,9 @@ package model.entities;
 
 import model.entities.Ingredient;
 
+import java.time.LocalDate;
 import java.util.Date;
+import java.util.DuplicateFormatFlagsException;
 import java.util.Set;
 
 public class Meal {
@@ -13,11 +15,11 @@ public class Meal {
 
     private String description;
 
-    private Date last_used;
+    private LocalDate last_used;
 
     private Set<Ingredient> ingredients;
 
-    public Meal(Long id, String name, String description, Date last_used, Set<Ingredient> ingredients) {
+    public Meal(Long id, String name, String description, LocalDate last_used, Set<Ingredient> ingredients) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -52,11 +54,11 @@ public class Meal {
         this.description = description;
     }
 
-    public Date getLast_used() {
+    public LocalDate getLast_used() {
         return last_used;
     }
 
-    public void setLast_used(Date last_used) {
+    public void setLast_used(LocalDate last_used) {
         this.last_used = last_used;
     }
 
@@ -66,6 +68,14 @@ public class Meal {
 
     public void setIngredients(Set<Ingredient> ingredients) {
         this.ingredients = ingredients;
+    }
+
+    public void addIngredient(Ingredient ingredient) throws DuplicateFormatFlagsException {
+        if (this.ingredients.contains(ingredient)) {
+            throw new DuplicateFormatFlagsException("Duplicate Item Added.");
+        } else {
+            this.ingredients.add(ingredient);
+        }
     }
 
     @Override

@@ -1,6 +1,8 @@
 # Grocery Shopping Assistance Application
 Dev-Version: 0.1.3\
 Release at Version: 1.0.0
+Alpha Release: 0.7.0
+Beta Release: 0.8.0
 
 ## Dev Version Notes
 #### 0.1.3

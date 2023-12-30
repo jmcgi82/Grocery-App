@@ -4,7 +4,7 @@ Release at Version: 1.0.0
 
 ## Dev Version Notes
 #### 0.1.3
-- Back-End Logic Complete for now, the following additions need to be made:
+- Back-End Logic Complete for now, the following additions need to be made:\
   *Note: These changes will be implemented with version 0.4.0
   ##### FUTURE UPDATES:
   - Add random selection to generate menu
